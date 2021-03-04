@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>TNW</title>
-        <!-- <link rel="stylesheet" href="reset.css"> -->
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="webpage.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -11,19 +11,23 @@
     <body>
         <header>
             <section id="header-1">
-                <a href="">News</a>
-                <a href="">Events</a>
-                <a href="">Business</a>
-                <a href="">AMAs</a>
-                <a href="">Spaces</a>
-                <a href="">Terms & Conditions</a>
-                <a href="">About</a>
-                <a href="">Advertise</a>
-                <a href="">Jobs</a>
-                <a href="">Contact</a>
+                <div class="header-margin">
+                    <a href="">News</a>
+                    <a href="">Events</a>
+                    <a href="">Business</a>
+                    <a href="">AMAs</a>
+                    <a href="">Spaces</a>
+                    <a href="">Terms & Conditions</a>
+                </div>
+                <div class="header-margin">
+                    <a href="">About</a>
+                    <a href="">Advertise</a>
+                    <a href="">Jobs</a>
+                    <a href="">Contact</a>
+                </div>
             </section>
             
-            <section id="header-2">
+            <section id="header-2" class="header-margin">
                 <a href="">LATEST</a>
                 <a href="">HARD FORK</a>
                 <a href="">PLUGGED</a>
@@ -34,88 +38,382 @@
             </section>
 
             <section id="header-3">
-                <p>Calling young digital talent in the Netherlands</p>
+                <p class="header-margin">Calling young digital talent in the Netherlands</p>
             </section>
         </header>
 
         <!-- grid -->
         <section class="headline-articles">
-            <article>a</article>
-            <article>b</article>
-            <article>c</article>
+            <article>
+                <img src="imgs/main_5.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </article>
+            <article>
+                <img src="imgs/main_2.jpeg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </article>
+            <article>
+                <img src="imgs/main_3.jpeg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </article>
         </section>
 
         <!-- grid -->
-        <section class="latest-news">
-            <h2>Latest News</h2>
+        <section class="latest-news main-margin">
+            <h2 class="title">Latest News</h2>
             <div class="latest-news-container">
-                <article>a</article>
-                <article>b</article>
-                <article>c</article>
-                <article>d</article>
-                <article>e</article>
-                <article>f</article>
-                <article>g</article>
-                <article>h</article>
+                <article>
+                    <img src="imgs/latest_news_1.PNG">
+                    <!-- stay flex col -->
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <p>Ut enim ad minim veniam quis<p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/latest_news_2.PNG">
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <p>Ut enim ad minim veniam quis<p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/latest_news_3.PNG">
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <p>Ut enim ad minim veniam quis<p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/latest_news_4.PNG">
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <p>Ut enim ad minim veniam quis<p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/latest_news_1.PNG">
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <p>Ut enim ad minim veniam quis<p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/latest_news_2.PNG">
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <p>Ut enim ad minim veniam quis<p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/latest_news_3.PNG">
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <p>Ut enim ad minim veniam quis<p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/latest_news_4.PNG">
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <p>Ut enim ad minim veniam quis<p>
+                    </div>
+                </article>
             </div>
         </section>
 
         <!-- flex column-->
-        <section class="funding-rounds">
+        <section class="funding-rounds main-margin">
             <!-- flex row column -->
             <div class="header">
-                <h2>Latest funding rounds on index co</h2>
+                <h2 class="title">Latest funding rounds on Index.co</h2>
                 <div class="links">
-                    <a href="">Add info</a>
-                    <a href="">Get updates by email</a>
+                    <a href="">Add Info</a><span class="divider">  |  </span>
+                    <a href="">Get updates by email</a><span class="divider">  |  </span>
                     <a href="">See more</a>
                 </div>
+                <!-- <p>Add Info | Get updates by email | See more</p>     -->
             </div>
             <!-- flex row/column -->
-            <div class="container-2">
-                <article>a</article>
-                <article>b</article>
-                <article>c</article>
-                <article>d</article>
+            <div class="content-container">
+                <!-- flex col -->
+                <article class="content">
+                    <!-- relative position -->
+                    <div class="header">
+                        <div id="orange-box">
+                            <p>Lorem</p>
+                        </div>
+                        <div id="pink-box">
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                        <img src="imgs/funding_1.jpg">
+                    </div>
+                    <div class="text-1">
+                        <p>Sed ut perspiciatis autem vel eum iure reprehenderit </p>
+                        <p>Sed ut perspiciatis autem vel eum iure reprehenderit </p>
+                    </div>
+                    <div class="text-2">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem autem vel eum iure</p>
+                    </div>
+                </article>
+
+                <article class="content">
+                    <!-- relative position -->
+                    <div class="header">
+                        <div id="orange-box">
+                            <p>Lorem</p>
+                        </div>
+                        <div id="pink-box">
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                        <img src="imgs/funding_4.jpg">
+                    </div>
+                    <div class="text-1">
+                        <p>Sed ut perspiciatis autem vel eum iure reprehenderit </p>
+                        <p>Sed ut perspiciatis autem vel eum iure reprehenderit </p>
+                    </div>
+                    <div class="text-2">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem autem vel eum iure</p>
+                    </div>
+                </article>
+
+                <article class="content">
+                    <!-- relative position -->
+                    <div class="header">
+                        <div id="orange-box">
+                            <p>Lorem</p>
+                        </div>
+                        <div id="pink-box">
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                        <img src="imgs/funding_1.jpg">
+                    </div>
+                    <div class="text-1">
+                        <p>Sed ut perspiciatis autem vel eum iure reprehenderit </p>
+                        <p>Sed ut perspiciatis autem vel eum iure reprehenderit </p>
+                    </div>
+                    <div class="text-2">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem autem vel eum iure</p>
+                    </div>
+                </article>
+
+                <article class="content">
+                    <!-- relative position -->
+                    <div class="header">
+                        <div id="orange-box">
+                            <p>Lorem</p>
+                        </div>
+                        <div id="pink-box">
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                        <img src="imgs/funding_4.jpg">
+                    </div>
+                    <div class="text-1">
+                        <p>Sed ut perspiciatis autem vel eum iure reprehenderit </p>
+                        <p>Sed ut perspiciatis autem vel eum iure reprehenderit </p>
+                    </div>
+                    <div class="text-2">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem autem vel eum iure</p>
+                    </div>
+                </article>
+                
             </div>
         </section>
 
-        <section class="other-articles">
-            <article>a</article>
-            <article>b</article>
-            <article>c</article>
-            <article>d</article>
-            <article>e</article>
-            <article>f</article>
-            <article>g</article>
-            <article>h</article>
-            <article>i</article>
+        <!-- 9 articles -->
+        <section class="other-articles main-margin">
+            <article>
+                <h2 class="title">Lorem</h2>
+                <img class="main-img" src="imgs/other_3.PNG">
+                <div class="subheader">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <img src="imgs/icon2.PNG">
+                </div>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+            </article>
+            <article>
+                <h2 class="title">Lorem</h2>
+                <img class="main-img" src="imgs/other_3.PNG">
+                <div class="subheader">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <img src="imgs/icon2.PNG">
+                </div>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+            </article>
+            <article>
+                <h2 class="title">Lorem</h2>
+                <img class="main-img" src="imgs/other_3.PNG">
+                <div class="subheader">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <img src="imgs/icon2.PNG">
+                </div>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+            </article>
+            <article>
+                <h2 class="title">Lorem</h2>
+                <img class="main-img" src="imgs/other_3.PNG">
+                <div class="subheader">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <img src="imgs/icon2.PNG">
+                </div>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+            </article>
+            <article>
+                <h2 class="title">Lorem</h2>
+                <img class="main-img" src="imgs/other_3.PNG">
+                <div class="subheader">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <img src="imgs/icon2.PNG">
+                </div>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+            </article>
+            <article>
+                <h2 class="title">Lorem</h2>
+                <img class="main-img" src="imgs/other_3.PNG">
+                <div class="subheader">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <img src="imgs/icon2.PNG">
+                </div>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+            </article>
+            <article>
+                <h2 class="title">Lorem</h2>
+                <img class="main-img" src="imgs/other_3.PNG">
+                <div class="subheader">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <img src="imgs/icon2.PNG">
+                </div>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+            </article>
+            <article>
+                <h2 class="title">Lorem</h2>
+                <img class="main-img" src="imgs/other_3.PNG">
+                <div class="subheader">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <img src="imgs/icon2.PNG">
+                </div>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+            </article>
+            <article>
+                <h2 class="title">Lorem</h2>
+                <img class="main-img" src="imgs/other_3.PNG">
+                <div class="subheader">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <img src="imgs/icon2.PNG">
+                </div>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p class="add-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+            </article>
         </section>
     <!-- 
             flex -->
-        <section class="latest-deals">
+        <section class="latest-deals main-margin">
             <!-- flex -->
             <div class="header">
-                <h2>Latest Deals</h2>
+                <h2 class="title">Latest Deals</h2>
                 <a href="">See All Deals</a>
             </div>
             <!-- grid -->
             <div class="latest-deals-container">
-                <article>a</article>
-                <article>b</article>
-                <article>c</article>
-                <article>d</article>
-                <article>e</article>
-                <article>f</article>
-                <article>g</article>
-                <article>h</article>
+                <article>
+                    <img src="imgs/deals_1.PNG">
+                    <div>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit</p>
+                        <p>Esse quam nihil </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/deals_2.PNG">
+                    <div>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit</p>
+                        <p>Esse quam nihil </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/deals_3.PNG">
+                    <div>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit</p>
+                        <p>Esse quam nihil </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/deals_1.PNG">
+                    <div>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit</p>
+                        <p>Esse quam nihil </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/deals_2.PNG">
+                    <div>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit</p>
+                        <p>Esse quam nihil </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/deals_3.PNG">
+                    <div>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit</p>
+                        <p>Esse quam nihil </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/deals_1.PNG">
+                    <div>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit</p>
+                        <p>Esse quam nihil </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imgs/deals_2.PNG">
+                    <div>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit</p>
+                        <p>Esse quam nihil </p>
+                    </div>
+                </article>
+                
             </div>
         </section>
 
         <footer>
             <section class="socials-container">
-                <img>
-                <section>
+                <img src="imgs/socials.png">
+                <section class="links">
                     <a href="">EVENTS</a>
                     <a href="">ABOUT</a>
                     <a href="">ADVERTISE</a>
